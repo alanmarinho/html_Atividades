@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.google.com.br/search" name="f" method="get">
+        <fieldset> <legend> O que você quer pesquisar?</legend>
+            <label for="palavras">Palavras que deseja pesquisar:</label>
+            <input type="text" name="as_oq" id="palavras" size="40" />
+
+            <h3>ou</h3>
+
+            <label for="exp">Expressão exata:</label><br />
+            <textarea name="as_epq" rows="4" cols="55" id="exp"></textarea>
+        </fieldset><br />
+
+        <fieldset> <legend> Opções</legend>
+            <label for="opc">Idioma:</label>
+            <select name="lr" size="1" id="opc">
+                <option value="lang_pt">Portugẽs</option>
+                <option value="lang_en">Inglês</option>
+                <option value="lang_es">Espanhol</option>
+            </select><br />
+
+            <label for="onde">Pesquisar onde:</label><br />
+            <select name="as_occt" size="4" id="onde">
+                <option value="">Em qualquer lugar da página</option>
+                <option value="title">No título da página</option>
+                <option value="body">No corpo da página</option>
+
+            </select>
+            
+        </fieldset>
+
+        <input type="reset" name="limpar" value="limpar" />
+        <input type="submit" name="pesquisar" value="pesquisar" />
+    </form>
+</body>
+</html>
